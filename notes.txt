@@ -1,0 +1,12 @@
+< notes >
+
+^ parent - child
+* display: table - table-cell
+    * keeps content inline
+    * enables vertical-align
+* how to move containers without display?
+
+^ container/wrapper
+* padding | margin
+* do I add another container to apply parent padding/margin, universally? or apply in each child tag;
+* should I contain/wrapper single use tags? e.g: H1, span
