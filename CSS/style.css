@@ -1,22 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 main#about-page,
-main#portfoilio-page,
+main#portfolio-page,
 main#contact-page
 {
-    background: lightgrey;
-    position: relative;
-    margin: auto;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 960px;
-    height: 80vh;
+    min-height: 80vh;
+    margin: 0 auto;
 }
-    section.float-container {
-        background: cornsilk;
-        position: absolute;
-        width: 100%;
-        min-height: 400px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+section.float-container {
+    background: lightblue;
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+}
 
 
 
@@ -24,41 +27,44 @@ main#contact-page
     float: left;
     width: 100px;
     height: auto;
-    margin: 10px;
+    margin: 0 10px 10px 0;
 }
 
 
 
-/* .project-container {
-    text-align: center;
-} */
-.portfolio .projects {
-    border: 5px solid black;
-    display: inline-block;
-    width: 200px;
-    height: 200px;
+.portfolio .project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 }
+    .portfolio .projects {
+        border: 5px solid black;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
     .projects .sub-title {
-        display: table;
-        background: gray;
-        width: 100%;
+        background: lightslategray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
         height: 5vh;
-        margin: 75% 0 0 0;
-    }
-    .sub-title h3 {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+        margin-bottom: 10px;
     }
 
 
 
-/* .contact-form {
-    text-align: center;
-} */
-input#name,
-input#email,
-textarea#message
-{
+#name,
+#email,
+#message {
     width: 99%;
+}
+
+#message {
+    height: 20vh;
 }

@@ -1,79 +1,50 @@
-body {
-    /* background-image: url('../IMG/photo-1439792675105-701e6a4ab6f0.jpg'); */
-    background-size: fill;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* height: 100vh; */
-}
-
-
 header {
     background: gray;
     width: 100%;
     height: 10vh;
 }
+
 header .wrapper {
-    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 960px;
     height: 100%;
+    margin: 0 auto;
 }
-    div.title-name {
-        background: lightblue;
-        display: table;
-        float: left;
-        height: 100%;
-
-    }
-        h1.name {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-        }
-    nav.navbar {
+    h1, nav {
         background: lightgreen;
-        display: table;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        float: right;
-        vertical-align: middle;
     }
-        a.nav-link {
-            color: #000;
-            display: table-cell;
-            vertical-align: middle;
+        nav ul {
+            display: flex;
+        }
+
+        nav li:not(:last-child) {
+            margin-right: 10px;
+        }
+        nav a {
             text-decoration: none;
         }
-        .nav-link:hover {
-            color: #fff;
-        }
-        .nav-link:not(:last-child) {
-            padding-right: 10px;
-        }
-
 
 
 footer {
+    border-top: 1vh solid black;
     background: gray;
     width: 100%;
-    height: 10vh;
+    height: 9vh;  /* fix */
 }
 footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
-    div.color-bar {
-        background: black;
-        width: 100%;
-        height: 2vh;
-    }
-    div.copyright {
+    footer span {
         background: pink;
-        display: table;
-        margin: auto;
-        height: 8vh;
-    }
-    .copyright span
-    {
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
+        /* padding-bottom: 5px; */
     }
