@@ -15,12 +15,17 @@ main#contact-page
     margin: 0 auto;
 }
 section.float-container {
-    background: lightblue;
+    background: #fff;
     width: 100%;
     min-height: 300px;
     padding: 20px;
 }
-
+a, p, label {
+    color: #777;
+}
+h2 {
+    color: #4aaaa5;
+}
 
 
 .about .profile-img {

@@ -1,5 +1,5 @@
 header {
-    background: gray;
+    background: #fff;
     width: 100%;
     height: 10vh;
 }
@@ -13,12 +13,15 @@ header .wrapper {
     margin: 0 auto;
 }
     h1, nav {
-        background: lightgreen;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
     }
+        h1 {
+            background: #4aaaa5;
+            color: #fff;
+        }
         nav ul {
             display: flex;
         }
@@ -32,8 +35,8 @@ header .wrapper {
 
 
 footer {
-    border-top: 1vh solid black;
-    background: gray;
+    border-top: 1vh solid #4aaaa5;
+    background: #666;
     width: 100%;
     height: 9vh;  /* fix */
 }
@@ -45,6 +48,7 @@ footer .wrapper {
     height: 100%;
 }
     footer span {
-        background: pink;
+        background: black;
+        color: #fff;
         /* padding-bottom: 5px; */
     }
