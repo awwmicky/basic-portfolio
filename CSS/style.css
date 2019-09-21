@@ -7,16 +7,16 @@ h1, h2, h3 {
 a, p, label {
     color: #777;
 }
-
-h1, h2 {
+h1 {
+    border-radius: 0 0 5px 5px;
     font-size: 2rem;
     font-weight: bold;
-}
-h1 {
     padding: 0 30px;
 }
 h2 {
     color: #4aaaa5;
+    font-size: 1.5rem;
+    font-size: 2rem;
 }
 h3 {
     color: #fff;
@@ -25,7 +25,7 @@ p {
     line-height: 2rem;
 }
 hr {
-    margin: 20px 0;
+    margin: 1em 0;
 }
 
 
@@ -33,7 +33,7 @@ main#about-page,
 main#portfolio-page,
 main#contact-page
 {
-    background: lightgray;
+    background: lightgray; /* placeholder */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,6 +43,7 @@ main#contact-page
 }
 section.float-container {
     background: #fff;
+    border: 0.5px solid #ddd;
     width: 100%;
     min-height: 300px;
     padding: 20px;
@@ -72,7 +73,7 @@ section.float-container {
         justify-content: flex-end;
         width: 200px;
         height: 200px;
-        margin: 10px;
+        margin: 5px;
     }
     .projects .sub-title {
         background: #4aaaa5;
@@ -106,4 +107,24 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background: #777;
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .about-info {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .profile-img {
+        float: none;
+        width: 300px; /* adjust*/
+        margin: 0;
+    }
+}
+@media screen and (max-width: 390px) {
+    main#contact-page {
+        min-height: 75vh;
+    }
 }
